@@ -13,3 +13,15 @@ func ExampleCosineSimilarity() {
 	// 0.00
 	// 0.87
 }
+
+func ExampleNearestColor() {
+	rgb, _ := NearestColor(RGB{253, 0, 0})
+	fmt.Printf("%+v", rgb)
+	// Output: {Name:Lemon Glacier RGB:[253 255 0] Distance:1}
+}
+
+func ExampleTextToRGB() {
+	rgb, _ := TextToRGB("Red")
+	fmt.Printf("%v", rgb)
+	// Output: [255 0 0]
+}
